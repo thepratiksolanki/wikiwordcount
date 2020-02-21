@@ -1,10 +1,14 @@
 # Wiki Word Count Frequency
 
 This is an API built with the help of laravel in PHP language. 
+
 It fetches wiki page data when provided with a page-id and lists top 5 words comma separated with their frequencies.
+
 The output is provided in both json(default) and yaml formats.
+
 **Stop words** from this link **https://gist.github.com/sebleier/554280** have been used.
 These stop words are escaped so that more relevant top 5 words with their frequencies are displayed.
+
 
 All the steps to install and run the project are given below.
 
@@ -46,7 +50,7 @@ php artisan key:generate
 ```sh
 ./vendor/bin/phpunit
 ```
-9. Visit **http://localhost:8081/wiki/21721040** This follows http://localhost:8081/wiki/<page-id> . The page-id can be changed according to the page data required. This will give output in JSON format.
+9. Visit **http://localhost:8081/wiki/21721040** . This follows http://localhost:8081/wiki/<page-id> . The page-id can be changed according to the page data required. This will give output in JSON format.
 
 10. If output is expected in YAML format then visit **http://localhost:8081/wiki/21721040/yaml** This follows http://localhost:8081/wiki/<page-id>/yaml . Again, the page-id can be changed according to the requirements.
 11. For command-line wrappers please use the link in step 9
